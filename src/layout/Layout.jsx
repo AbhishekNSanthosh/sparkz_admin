@@ -6,14 +6,14 @@ import Navbar from '../modules/Widgets/Navbar/Navbar'
 import 'react-toastify/dist/ReactToastify.css';
 
 const Layout = () => {
-    const token = localStorage.getItem('accessToken');
+    const dep = localStorage.getItem('dep');
     const navigate = useNavigate();
 
-    // useEffect(() => {
-    //     if (!token) {
-    //         navigate('/');
-    //     }
-    // }, []);
+    useEffect(() => {
+        if (!dep) {
+            navigate('/');
+        }
+    }, []);
 
     return (
         <div className={styles.fullPage}>
