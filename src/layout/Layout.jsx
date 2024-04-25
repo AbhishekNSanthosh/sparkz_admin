@@ -11,7 +11,7 @@ const Layout = () => {
 
     useEffect(() => {
         if (!dep) {
-            navigate('/');
+            navigate('/login');
         }
     }, []);
 
