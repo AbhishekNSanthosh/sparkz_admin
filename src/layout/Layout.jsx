@@ -16,13 +16,11 @@ const Layout = () => {
 
     return (
         <div className={styles.fullPage}>
-            <div className={styles.top}>
                 <Navbar />
                 <div className={styles.mainContent}>
                     <Suspense>
                         <Outlet />
                     </Suspense>
-                </div>
             </div>
         </div>
     )
