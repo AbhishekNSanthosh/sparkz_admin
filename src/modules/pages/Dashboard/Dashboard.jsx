@@ -24,7 +24,7 @@ export default function Dashboard() {
     return (
         <div className={styles.container}>
             <div className={styles.wrap}>
-                {dep === "superadmin" &&
+                {dep === "super" &&
                     <div className={styles.rowtop}>
                         <span className={styles.count}>Total Registrations:{stats?.total}</span>
                         <span className={styles.count}>CSE: {stats?.cse}</span>
