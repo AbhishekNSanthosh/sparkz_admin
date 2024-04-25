@@ -34,6 +34,12 @@
     font-weight: 500;
     font-size: 1.3rem;
 }
+@media only screen and (max-width: 880px) {
+    .logo{
+        font-weight: 500;
+        font-size: 1rem;
+    }
+}
 
 .logout{
     padding: 0.5rem 1rem;
@@ -45,4 +51,18 @@
     font-size:1rem;
     font-weight: 500;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 880px) {
+    .logout{
+        padding: 0.5rem 0.8rem;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        background: red;
+        color: #fff;
+        font-size:0.9rem;
+        font-weight: 500;
+        cursor: pointer;
+    }
 }

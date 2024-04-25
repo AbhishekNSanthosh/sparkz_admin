@@ -6,12 +6,13 @@ import {
 import Layout from './layout/Layout';
 import Dashboard from './modules/pages/Dashboard/Dashboard';
 import Login from './modules/pages/Login/Login';
+import EventDetails from './modules/pages/EventDetails/EventDetails';
 
 function App() {
   const router = createBrowserRouter([
     {
       path: '/login',
-      element: <Login/>
+      element: <Login />
     },
     {
       path: "/",
@@ -19,7 +20,11 @@ function App() {
       children: [
         {
           path: '/dashboard',
-          element: <Dashboard/>
+          element: <Dashboard />
+        },
+        {
+          path: '/event/:id',
+          element: <EventDetails />
         },
       ]
     }

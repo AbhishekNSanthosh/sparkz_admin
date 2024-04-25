@@ -1,0 +1,112 @@
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20vh 1rem;
+}
+
+@media only screen and (max-width: 880px) {
+    .container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20vh 5vw 5vh;
+    }
+}
+
+.wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vh;
+    justify-content: center;
+}
+
+.eventRow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vw;
+    justify-content: center;
+}
+
+.teamBox {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.box {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    gap: 4vh;
+    flex-wrap: wrap;
+}
+
+.eventRow {
+    padding: 1rem;
+    width: 25vw;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 0, 0, 0.274);
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    align-items: flex-start;
+    justify-content: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+@media only screen and (max-width: 880px) {
+    .eventRow {
+        padding: 1rem;
+        width: 80vw;
+        border-radius: 10px;
+        border: 1px solid rgba(255, 0, 0, 0.274);
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+        align-items: flex-start;
+        justify-content: center;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    } 
+}
+
+.etitle {
+    font-weight: 700;
+    font-size: 2vw;
+    background: -webkit-linear-gradient(45deg, rgb(255, 255, 255), red, red, rgb(255, 255, 255)) text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media only screen and (max-width: 880px) {
+    .etitle {
+        font-weight: 700;
+        font-size: 3vw;
+        background: -webkit-linear-gradient(45deg, rgb(255, 160, 160), red, red, rgb(202, 135, 135)) text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.teamList {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.hr{
+    height: 1px;
+    width: 100%;
+    background-color: rgb(206, 206, 206);
+}
+
+.team{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
