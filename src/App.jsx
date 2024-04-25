@@ -5,12 +5,13 @@ import {
 } from "react-router-dom";
 import Layout from './layout/Layout';
 import Dashboard from './modules/pages/Dashboard/Dashboard';
+import Login from './modules/pages/Login/Login';
 
 function App() {
   const router = createBrowserRouter([
     {
-      path: '/hi',
-      element: <>hi</>
+      path: '/login',
+      element: <Login/>
     },
     {
       path: "/",
