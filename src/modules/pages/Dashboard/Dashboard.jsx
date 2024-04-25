@@ -9,11 +9,15 @@ export default function Dashboard() {
     const dep = localStorage.getItem('dep');
     const navigate = useNavigate();
     useEffect(() => {
-        if (dep === "super") {
-            getEventList(setEventList);
-            getEventStats(setStats)
+        if (!dep) {
+            navigate('/login')
         } else {
-            getEventListByDep(setEventList, dep);
+            if (dep === "super") {
+                getEventList(setEventList);
+                getEventStats(setStats)
+            } else {
+                getEventListByDep(setEventList, dep);
+            }
         }
     }, [])
 
