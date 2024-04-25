@@ -24,14 +24,16 @@ export default function Dashboard() {
     return (
         <div className={styles.container}>
             <div className={styles.wrap}>
-                <div className={styles.rowtop}>
-                    <span className={styles.count}>Total Registrations:{stats?.total}</span>
-                    <span className={styles.count}>CSE: {stats?.cse}</span>
-                    <span className={styles.count}>EEE: {stats?.eee}</span>
-                    <span className={styles.count}>MECH: {stats?.mech}</span>
-                    <span className={styles.count}>CIVIL: {stats?.civil}</span>
-                    <span className={styles.count}>Basic Science: {stats?.bsc}</span>
-                </div>
+                {dep === "superadmin" &&
+                    <div className={styles.rowtop}>
+                        <span className={styles.count}>Total Registrations:{stats?.total}</span>
+                        <span className={styles.count}>CSE: {stats?.cse}</span>
+                        <span className={styles.count}>EEE: {stats?.eee}</span>
+                        <span className={styles.count}>MECH: {stats?.mech}</span>
+                        <span className={styles.count}>CIVIL: {stats?.civil}</span>
+                        <span className={styles.count}>Basic Science: {stats?.bsc}</span>
+                    </div>
+                }
                 <div className={styles.row}>
                     <span className={styles.eventListBox}>Event List</span>
                 </div>
