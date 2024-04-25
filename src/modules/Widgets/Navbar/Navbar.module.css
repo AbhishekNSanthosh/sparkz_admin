@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    height: 8vh;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 5vw;
+}
+
+.wrap {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.left{
+    flex: 6;
+}
+
+.right{
+    flex:6;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.logo{
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.logout{
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: red;
+    color: #fff;
+    font-size:1rem;
+    font-weight: 500;
+}
